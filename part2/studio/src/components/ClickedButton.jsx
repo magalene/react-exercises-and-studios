@@ -1,6 +1,16 @@
+import ".styling.css";
 function ClickedButton() {
-  return;
+  function handleClick() {
+    alert("You are saving this pin!");
+    useSaveButton(!saveButton);
+  }
+  return (
+    <button id="savedButton" onClick={handleClick}>
+      Saved
+    </button>
+  );
 }
+
 
 export default ClickedButton;
 
